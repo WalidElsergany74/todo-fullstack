@@ -1,0 +1,602 @@
+[
+  {
+    "name": "Design responsive navigation bar for mobile and desktop",
+    "description": "Create a clean, accessible navbar with mobile hamburger menu, dropdowns, and dark mode switcher.",
+    "completed": true,
+    "createdAt": "2026-01-05T09:30:00.000Z"
+  },
+  {
+    "name": "Implement user authentication with JWT and refresh tokens",
+    "description": "Set up secure HTTP-only cookies, access tokens with 15m expiration, and refresh tokens stored in database.",
+    "completed": true,
+    "createdAt": "2026-01-08T14:15:00.000Z"
+  },
+  {
+    "name": "Fix CSS flexbox alignment issues on Safari browser",
+    "description": "Resolve cross-browser rendering bug where cards overlap on iOS WebKit browsers.",
+    "completed": false,
+    "createdAt": "2026-01-11T11:00:00.000Z"
+  },
+  {
+    "name": "Set up MongoDB database connection and indexes",
+    "description": "Configure connection pooling, automatic reconnect retry logic, and index frequently queried fields.",
+    "completed": true,
+    "createdAt": "2026-01-14T08:45:00.000Z"
+  },
+  {
+    "name": "Write comprehensive unit tests for Todo validation schema",
+    "description": "Use Jest to test edge cases, empty strings, max length constraints, and invalid data types.",
+    "completed": false,
+    "createdAt": "2026-01-17T16:20:00.000Z"
+  },
+  {
+    "name": "Add rate limiting middleware using express-rate-limit",
+    "description": "Protect public endpoints against brute-force attacks by limiting requests to 100 per 15 minutes per IP.",
+    "completed": true,
+    "createdAt": "2026-01-20T10:10:00.000Z"
+  },
+  {
+    "name": "Create password reset flow with secure email tokens",
+    "description": "Generate crypto random tokens with 10-minute expiry and send reset links via SendGrid email service.",
+    "completed": false,
+    "createdAt": "2026-01-23T13:40:00.000Z"
+  },
+  {
+    "name": "Optimize database queries with Mongoose lean() and projection",
+    "description": "Improve API response time by 40% using lean queries for read-only endpoints and selecting only needed fields.",
+    "completed": true,
+    "createdAt": "2026-01-26T15:00:00.000Z"
+  },
+  {
+    "name": "Implement global error handling middleware in Express",
+    "description": "Handle operational errors, cast errors, duplicate key errors, and validation errors in production format.",
+    "completed": true,
+    "createdAt": "2026-01-29T12:30:00.000Z"
+  },
+  {
+    "name": "Integrate Stripe payment gateway for subscription plans",
+    "description": "Handle webhooks, customer creation, payment method attachments, and subscription status events.",
+    "completed": false,
+    "createdAt": "2026-02-01T09:15:00.000Z"
+  },
+  {
+    "name": "Configure Helmet.js and security headers",
+    "description": "Set Content-Security-Policy, X-Frame-Options, XSS protection, and prevent clickjacking attacks.",
+    "completed": true,
+    "createdAt": "2026-02-03T17:45:00.000Z"
+  },
+  {
+    "name": "Build drag-and-drop task sorting UI with React Beautiful DnD",
+    "description": "Allow users to reorder todos by priority with smooth animations and optimistic UI updates.",
+    "completed": false,
+    "createdAt": "2026-02-05T10:00:00.000Z"
+  },
+  {
+    "name": "Set up GitHub Actions CI/CD pipeline for automated testing",
+    "description": "Run ESLint, unit tests, and build checks automatically on every pull request to main branch.",
+    "completed": true,
+    "createdAt": "2026-02-07T14:50:00.000Z"
+  },
+  {
+    "name": "Add pagination and filtering to get all todos endpoint",
+    "description": "Implement reusable APIFeatures class to handle page, limit, sort, fields selection, and regex search.",
+    "completed": true,
+    "createdAt": "2026-02-10T11:25:00.000Z"
+  },
+  {
+    "name": "Implement dark mode theme toggle with persistent local storage",
+    "description": "Support system preference detection (prefers-color-scheme) and manual toggle with smooth CSS transitions.",
+    "completed": false,
+    "createdAt": "2026-02-12T16:00:00.000Z"
+  },
+  {
+    "name": "Write Swagger/OpenAPI documentation for all API routes",
+    "description": "Document request parameters, request body schemas, response codes, and authentication requirements.",
+    "completed": false,
+    "createdAt": "2026-02-14T08:30:00.000Z"
+  },
+  {
+    "name": "Configure Morgan logger for production and development",
+    "description": "Log HTTP requests with timestamp, status code, response time, and remote IP address.",
+    "completed": true,
+    "createdAt": "2026-02-16T13:15:00.000Z"
+  },
+  {
+    "name": "Implement real-time task updates with Socket.IO",
+    "description": "Broadcast task creation, status changes, and deletions instantly to all connected team members.",
+    "completed": false,
+    "createdAt": "2026-02-18T15:40:00.000Z"
+  },
+  {
+    "name": "Add data export feature to CSV and JSON formats",
+    "description": "Allow users to download their complete task list including creation dates, descriptions, and statuses.",
+    "completed": false,
+    "createdAt": "2026-02-20T10:50:00.000Z"
+  },
+  {
+    "name": "Fix race condition in simultaneous task completion toggle",
+    "description": "Use atomic MongoDB operations ($set) instead of find-then-save pattern to avoid concurrency glitches.",
+    "completed": true,
+    "createdAt": "2026-02-22T14:20:00.000Z"
+  },
+  {
+    "name": "Implement file upload for task attachments using Multer and Cloudinary",
+    "description": "Support image and PDF attachments up to 5MB with automatic compression and secure URL generation.",
+    "completed": false,
+    "createdAt": "2026-02-24T09:00:00.000Z"
+  },
+  {
+    "name": "Set up Redis caching layer for frequently accessed tasks",
+    "description": "Cache user todo lists with 5-minute TTL and invalidate cache upon any mutation operation.",
+    "completed": true,
+    "createdAt": "2026-02-26T12:00:00.000Z"
+  },
+  {
+    "name": "Add email reminder notifications for pending tasks",
+    "description": "Run cron job every morning at 8 AM to send digest emails with tasks due today.",
+    "completed": false,
+    "createdAt": "2026-02-28T16:30:00.000Z"
+  },
+  {
+    "name": "Refactor Todo validation using Zod schemas",
+    "description": "Clean up request body validation, enforce max lengths, trim white spaces, and provide clear error messages.",
+    "completed": true,
+    "createdAt": "2026-03-02T11:15:00.000Z"
+  },
+  {
+    "name": "Create interactive dashboard with task completion statistics",
+    "description": "Display charts showing weekly completed vs pending tasks, average completion time, and productivity trends.",
+    "completed": false,
+    "createdAt": "2026-03-04T14:45:00.000Z"
+  },
+  {
+    "name": "Audit npm dependencies and update packages with vulnerabilities",
+    "description": "Run npm audit, upgrade outdated libraries, and resolve high-severity security warnings.",
+    "completed": true,
+    "createdAt": "2026-03-06T10:20:00.000Z"
+  },
+  {
+    "name": "Implement full-text search with regex and index support",
+    "description": "Enable users to search across both todo title and description with case-insensitive matching.",
+    "completed": true,
+    "createdAt": "2026-03-08T15:35:00.000Z"
+  },
+  {
+    "name": "Create Dockerfile and docker-compose configuration for development",
+    "description": "Containerize Node.js backend and MongoDB instance with volume persistence for easy onboarding.",
+    "completed": false,
+    "createdAt": "2026-03-10T08:50:00.000Z"
+  },
+  {
+    "name": "Add task tags and categories support",
+    "description": "Enable organizing todos with custom colored labels (Work, Personal, Urgent, Health, Learning).",
+    "completed": false,
+    "createdAt": "2026-03-12T13:00:00.000Z"
+  },
+  {
+    "name": "Sanitize user inputs against NoSQL injection and XSS attacks",
+    "description": "Add express-mongo-sanitize and xss-clean to clean request body and query parameters.",
+    "completed": true,
+    "createdAt": "2026-03-14T17:10:00.000Z"
+  },
+  {
+    "name": "Implement infinite scroll pagination on frontend client",
+    "description": "Use Intersection Observer API to fetch next page of todos seamlessly when user scrolls near bottom.",
+    "completed": false,
+    "createdAt": "2026-03-15T09:40:00.000Z"
+  },
+  {
+    "name": "Write integration tests for Todo CRUD API endpoints",
+    "description": "Test GET, POST, PATCH, and DELETE endpoints with Supertest and in-memory MongoDB.",
+    "completed": true,
+    "createdAt": "2026-03-16T14:00:00.000Z"
+  },
+  {
+    "name": "Add batch operations: mark multiple todos as completed",
+    "description": "Create bulk update endpoint to complete or delete multiple selected tasks in a single request.",
+    "completed": false,
+    "createdAt": "2026-03-17T11:20:00.000Z"
+  },
+  {
+    "name": "Setup environment variables validation on application startup",
+    "description": "Ensure required env vars (DATABASE, PORT, JWT_SECRET) exist before starting the server.",
+    "completed": true,
+    "createdAt": "2026-03-18T16:45:00.000Z"
+  },
+  {
+    "name": "Optimize bundle size by tree-shaking unused icons and utilities",
+    "description": "Reduce initial JavaScript payload from 850KB to 240KB for faster first contentful paint.",
+    "completed": true,
+    "createdAt": "2026-03-19T10:15:00.000Z"
+  },
+  {
+    "name": "Implement user activity audit log for team workspaces",
+    "description": "Record who created, edited, completed, or deleted tasks with timestamp and IP address.",
+    "completed": false,
+    "createdAt": "2026-03-20T13:30:00.000Z"
+  },
+  {
+    "name": "Create keyboard shortcuts for rapid task management",
+    "description": "Support hotkeys (N for new task, / for search, C for complete, D for delete) with tooltip hints.",
+    "completed": false,
+    "createdAt": "2026-03-21T15:10:00.000Z"
+  },
+  {
+    "name": "Configure compression middleware for HTTP gzip responses",
+    "description": "Use compression package to compress all JSON and text response payloads sent to clients.",
+    "completed": true,
+    "createdAt": "2026-03-22T08:25:00.000Z"
+  },
+  {
+    "name": "Design empty state illustrations for zero tasks view",
+    "description": "Create engaging graphics and encouraging call-to-action when user completes all daily tasks.",
+    "completed": true,
+    "createdAt": "2026-03-23T12:50:00.000Z"
+  },
+  {
+    "name": "Add due date countdown timer and overdue indicators",
+    "description": "Highlight tasks that are overdue in red and tasks due within 24 hours in warning amber.",
+    "completed": false,
+    "createdAt": "2026-03-24T17:00:00.000Z"
+  },
+  {
+    "name": "Implement subtasks and checklist functionality inside todos",
+    "description": "Allow breaking complex tasks into smaller checkable items with progress bar indicator.",
+    "completed": false,
+    "createdAt": "2026-03-25T09:10:00.000Z"
+  },
+  {
+    "name": "Setup CORS configuration with allowed origin whitelist",
+    "description": "Configure access control allow origin, credentials header, and preflight OPTIONS handling.",
+    "completed": true,
+    "createdAt": "2026-03-26T14:30:00.000Z"
+  },
+  {
+    "name": "Create responsive mobile drawer for filters and sorting options",
+    "description": "Slide-in drawer on mobile screens with radio buttons for sort and checkboxes for status filter.",
+    "completed": false,
+    "createdAt": "2026-03-27T11:05:00.000Z"
+  },
+  {
+    "name": "Add automated database backup script to AWS S3 bucket",
+    "description": "Configure nightly mongodump cron job with 30-day retention policy and encrypted storage.",
+    "completed": false,
+    "createdAt": "2026-03-28T16:15:00.000Z"
+  },
+  {
+    "name": "Implement soft delete mechanism with restore functionality",
+    "description": "Mark tasks with isDeleted: true instead of removing from DB, allowing 30-day trash bin recovery.",
+    "completed": false,
+    "createdAt": "2026-03-29T10:40:00.000Z"
+  },
+  {
+    "name": "Configure Winston logger with file transport for error logs",
+    "description": "Log unhandled exceptions and HTTP 500 errors to rotating log files with stack traces.",
+    "completed": true,
+    "createdAt": "2026-03-30T13:20:00.000Z"
+  },
+  {
+    "name": "Build customizable notification preferences panel",
+    "description": "Let users configure web push, in-app badges, and email preferences per notification category.",
+    "completed": false,
+    "createdAt": "2026-04-01T08:00:00.000Z"
+  },
+  {
+    "name": "Add sound effects on completing tasks with mute option",
+    "description": "Play rewarding chime sound on task completion with accessible audio toggle in user settings.",
+    "completed": true,
+    "createdAt": "2026-04-02T15:45:00.000Z"
+  },
+  {
+    "name": "Perform accessibility audit with Lighthouse and Axe tools",
+    "description": "Ensure WCAG 2.1 AA compliance, proper ARIA labels, contrast ratio, and full keyboard navigation.",
+    "completed": false,
+    "createdAt": "2026-04-03T11:30:00.000Z"
+  },
+  {
+    "name": "Deploy Node.js backend to Render with auto-deploy on main push",
+    "description": "Configure build command, environment variables, healthcheck endpoint, and HTTPS SSL certificate.",
+    "completed": true,
+    "createdAt": "2026-04-04T16:50:00.000Z"
+  },
+  {
+    "name": "Review code architecture and extract reusable controllers",
+    "description": "Create generic factory handlers for getOne, getAll, createOne, updateOne, and deleteOne.",
+    "completed": true,
+    "createdAt": "2026-04-05T09:20:00.000Z"
+  },
+  {
+    "name": "Add priority badges to tasks: Low, Medium, High, Urgent",
+    "description": "Color-coded priority tags with filtering and sorting capabilities on the task board.",
+    "completed": false,
+    "createdAt": "2026-04-06T14:10:00.000Z"
+  },
+  {
+    "name": "Implement Pomodoro timer integrated with task tracking",
+    "description": "25-minute focus timer attached to active task with break reminders and completed session counts.",
+    "completed": false,
+    "createdAt": "2026-04-07T10:30:00.000Z"
+  },
+  {
+    "name": "Set up Sentry error monitoring and performance tracking",
+    "description": "Capture client and server runtime exceptions with user context, breadcrumbs, and release tracking.",
+    "completed": true,
+    "createdAt": "2026-04-08T15:00:00.000Z"
+  },
+  {
+    "name": "Add task duplication and clone feature",
+    "description": "Quick action button to duplicate an existing task with all its subtasks and descriptions.",
+    "completed": true,
+    "createdAt": "2026-04-09T11:45:00.000Z"
+  },
+  {
+    "name": "Implement recurring tasks (daily, weekly, monthly recurrence)",
+    "description": "Automatically recreate completed recurring tasks based on scheduled cron rule.",
+    "completed": false,
+    "createdAt": "2026-04-10T16:20:00.000Z"
+  },
+  {
+    "name": "Create onboarding walkthrough tutorial for new users",
+    "description": "Interactive step-by-step tooltip guide introducing key features, shortcuts, and views.",
+    "completed": false,
+    "createdAt": "2026-04-11T09:00:00.000Z"
+  },
+  {
+    "name": "Configure PM2 process manager for production server clustering",
+    "description": "Run Node.js cluster mode matching CPU cores with zero-downtime reload and automatic restarts.",
+    "completed": true,
+    "createdAt": "2026-04-12T13:40:00.000Z"
+  },
+  {
+    "name": "Add rich text markdown editor for task descriptions",
+    "description": "Support bold, italic, code blocks, lists, hyperlinks, and live markdown preview.",
+    "completed": false,
+    "createdAt": "2026-04-13T17:15:00.000Z"
+  },
+  {
+    "name": "Implement multi-language support (i18n) for Arabic and English",
+    "description": "Configure RTL layout direction, localized dates, translations, and language switcher.",
+    "completed": true,
+    "createdAt": "2026-04-14T10:00:00.000Z"
+  },
+  {
+    "name": "Build Kanban board view with columns for Todo, In Progress, Done",
+    "description": "Allow dragging cards between columns to change task status with optimistic rendering.",
+    "completed": false,
+    "createdAt": "2026-04-15T14:30:00.000Z"
+  },
+  {
+    "name": "Set up automated semantic versioning and changelog generator",
+    "description": "Use standard-version to automatically bump package.json version and update CHANGELOG.md.",
+    "completed": true,
+    "createdAt": "2026-04-16T11:10:00.000Z"
+  },
+  {
+    "name": "Add task estimated time vs actual time tracking",
+    "description": "Input estimated hours and log actual time spent with start/stop stopwatch counter.",
+    "completed": false,
+    "createdAt": "2026-04-17T16:00:00.000Z"
+  },
+  {
+    "name": "Optimize image assets and convert to WebP format",
+    "description": "Run Sharp image processing to reduce thumbnail sizes and improve page load speeds.",
+    "completed": true,
+    "createdAt": "2026-04-18T08:45:00.000Z"
+  },
+  {
+    "name": "Implement Google OAuth2 social login",
+    "description": "Allow users to register and sign in seamlessly with their Google account via Passport.js.",
+    "completed": false,
+    "createdAt": "2026-04-19T13:20:00.000Z"
+  },
+  {
+    "name": "Create calendar view showing tasks on their due dates",
+    "description": "Monthly and weekly calendar grid with color-coded task chips and click-to-edit modal.",
+    "completed": false,
+    "createdAt": "2026-04-20T15:50:00.000Z"
+  },
+  {
+    "name": "Add custom webhooks for third-party integrations",
+    "description": "Send POST payloads to user-defined URLs when tasks are created, updated, or finished.",
+    "completed": false,
+    "createdAt": "2026-04-21T10:25:00.000Z"
+  },
+  {
+    "name": "Implement client-side offline mode with IndexedDB and Service Worker",
+    "description": "Queue offline task edits and sync automatically when internet connection is restored.",
+    "completed": false,
+    "createdAt": "2026-04-22T14:40:00.000Z"
+  },
+  {
+    "name": "Add two-factor authentication (2FA) with TOTP authenticator app",
+    "description": "Generate QR code for Google Authenticator and verify 6-digit one-time passcodes.",
+    "completed": false,
+    "createdAt": "2026-04-23T11:15:00.000Z"
+  },
+  {
+    "name": "Refactor CSS with custom CSS design tokens and variables",
+    "description": "Unify spacing, typography scales, border radii, shadows, and color palette tokens.",
+    "completed": true,
+    "createdAt": "2026-04-24T16:35:00.000Z"
+  },
+  {
+    "name": "Add filter presets (Today, This Week, Overdue, Completed, High Priority)",
+    "description": "Quick filter buttons on top of task list to quickly switch views without complex query building.",
+    "completed": true,
+    "createdAt": "2026-04-25T09:05:00.000Z"
+  },
+  {
+    "name": "Implement task assignment to team members with avatar badges",
+    "description": "Select assignee from team dropdown and filter tasks by 'Assigned to me'.",
+    "completed": false,
+    "createdAt": "2026-04-26T13:50:00.000Z"
+  },
+  {
+    "name": "Set up Nginx reverse proxy with SSL certificate via Let's Encrypt",
+    "description": "Forward requests to Node.js port 8000, enforce HTTP to HTTPS redirection, and cache static files.",
+    "completed": true,
+    "createdAt": "2026-04-27T17:00:00.000Z"
+  },
+  {
+    "name": "Add print-friendly stylesheet for printing task lists",
+    "description": "Hide navigation bars, adjust contrast, and format tasks for clean A4 paper printing.",
+    "completed": false,
+    "createdAt": "2026-04-28T10:10:00.000Z"
+  },
+  {
+    "name": "Create REST API healthcheck endpoint (/health)",
+    "description": "Return database connection status, memory usage, uptime, and server timestamp.",
+    "completed": true,
+    "createdAt": "2026-04-29T14:20:00.000Z"
+  },
+  {
+    "name": "Implement task comments and discussion thread",
+    "description": "Allow team members to leave comments, mention colleagues with @tag, and attach screenshots.",
+    "completed": false,
+    "createdAt": "2026-04-30T11:40:00.000Z"
+  },
+  {
+    "name": "Add voice-to-text task input using Web Speech API",
+    "description": "Microphone button in task input form to transcribe spoken task title and description.",
+    "completed": false,
+    "createdAt": "2026-05-01T15:30:00.000Z"
+  },
+  {
+    "name": "Configure CSRF token protection for state-changing endpoints",
+    "description": "Implement Double Submit Cookie pattern to protect against Cross-Site Request Forgery.",
+    "completed": true,
+    "createdAt": "2026-05-02T08:50:00.000Z"
+  },
+  {
+    "name": "Build custom 404 and 500 error pages with helpful links",
+    "description": "Friendly animated error illustrations with search bar and button to return to home page.",
+    "completed": true,
+    "createdAt": "2026-05-03T13:10:00.000Z"
+  },
+  {
+    "name": "Add task completion celebration confetti animation",
+    "description": "Trigger lightweight canvas confetti blast when all tasks in a category are completed.",
+    "completed": true,
+    "createdAt": "2026-05-04T16:40:00.000Z"
+  },
+  {
+    "name": "Implement bulk import from Todoist and Trello via JSON/CSV",
+    "description": "Map foreign task schema fields, import lists, and show progress bar during bulk import.",
+    "completed": false,
+    "createdAt": "2026-05-05T09:25:00.000Z"
+  },
+  {
+    "name": "Set up database connection retry mechanism with exponential backoff",
+    "description": "Handle transient MongoDB Atlas disconnects gracefully without crashing the Node process.",
+    "completed": true,
+    "createdAt": "2026-05-06T14:15:00.000Z"
+  },
+  {
+    "name": "Create shared public task lists with read-only URL tokens",
+    "description": "Generate shareable public link so clients or external guests can view project progress.",
+    "completed": false,
+    "createdAt": "2026-05-07T10:45:00.000Z"
+  },
+  {
+    "name": "Add task pinning to keep important items at top of list",
+    "description": "Toggle pin icon to stick critical tasks above chronological ordering.",
+    "completed": true,
+    "createdAt": "2026-05-08T15:05:00.000Z"
+  },
+  {
+    "name": "Implement dark mode and light mode auto-switching based on sunset",
+    "description": "Use Geolocation API and solar calculations to automatically switch theme at dusk.",
+    "completed": false,
+    "createdAt": "2026-05-09T11:55:00.000Z"
+  },
+  {
+    "name": "Add task archiving feature to declutter main workspace",
+    "description": "Move old completed tasks to archive section while preserving historical data and searchability.",
+    "completed": true,
+    "createdAt": "2026-05-10T16:30:00.000Z"
+  },
+  {
+    "name": "Configure Postman collection and environment for team testing",
+    "description": "Export comprehensive collection with pre-request scripts, automated tests, and environment variables.",
+    "completed": true,
+    "createdAt": "2026-05-11T09:10:00.000Z"
+  },
+  {
+    "name": "Implement Slack bot notifications for created and completed tasks",
+    "description": "Send formatted Slack webhook cards to #project-updates channel when major tasks are finished.",
+    "completed": false,
+    "createdAt": "2026-05-12T13:45:00.000Z"
+  },
+  {
+    "name": "Add batch restore and permanent deletion from trash bin",
+    "description": "Select multiple trashed items to restore or permanently wipe from MongoDB with confirmation dialog.",
+    "completed": false,
+    "createdAt": "2026-05-13T17:20:00.000Z"
+  },
+  {
+    "name": "Optimize font loading with font-display: swap and local woff2 files",
+    "description": "Eliminate layout shift and Flash of Invisible Text (FOIT) on initial page load.",
+    "completed": true,
+    "createdAt": "2026-05-14T10:35:00.000Z"
+  },
+  {
+    "name": "Implement user profile settings and avatar upload",
+    "description": "Allow updating display name, email, password, notification preferences, and profile photo.",
+    "completed": false,
+    "createdAt": "2026-05-15T14:55:00.000Z"
+  },
+  {
+    "name": "Add task dependency mapping (Blockers and Prerequisites)",
+    "description": "Prevent completing a task until all predecessor blocker tasks are marked done.",
+    "completed": false,
+    "createdAt": "2026-05-16T11:20:00.000Z"
+  },
+  {
+    "name": "Set up server-side request logging with correlation IDs",
+    "description": "Attach unique UUID (x-request-id) to each HTTP request to trace logs across services.",
+    "completed": true,
+    "createdAt": "2026-05-17T16:10:00.000Z"
+  },
+  {
+    "name": "Build analytics report showing completion velocity per week",
+    "description": "Calculate team velocity, average turnaround time, and task burndown charts.",
+    "completed": false,
+    "createdAt": "2026-05-18T09:30:00.000Z"
+  },
+  {
+    "name": "Add keyboard navigation support for modal dialogs and dropdowns",
+    "description": "Trap focus inside open modals, allow Escape key to dismiss, and Arrow keys to navigate lists.",
+    "completed": true,
+    "createdAt": "2026-05-19T13:05:00.000Z"
+  },
+  {
+    "name": "Implement web push notifications using Service Worker and VAPID keys",
+    "description": "Send desktop push alerts for task deadlines even when browser tab is closed.",
+    "completed": false,
+    "createdAt": "2026-05-20T17:40:00.000Z"
+  },
+  {
+    "name": "Configure Gzip and Brotli compression for static assets",
+    "description": "Pre-compress production build assets to minimize bandwidth usage and speed up mobile clients.",
+    "completed": true,
+    "createdAt": "2026-05-21T10:50:00.000Z"
+  },
+  {
+    "name": "Add task activity timeline showing full edit history",
+    "description": "Visual timeline displaying what was changed, by whom, and exact timestamp.",
+    "completed": false,
+    "createdAt": "2026-05-22T15:15:00.000Z"
+  },
+  {
+    "name": "Finalize API endpoints testing and performance benchmark",
+    "description": "Run Autocannon load tests to verify server handles 1000 concurrent requests under 50ms latency.",
+    "completed": true,
+    "createdAt": "2026-05-23T12:00:00.000Z"
+  },
+  {
+    "name": "Prepare project release notes and v1.0.0 milestone tag",
+    "description": "Compile summary of all features, API documentation links, and seed data instructions for developers.",
+    "completed": true,
+    "createdAt": "2026-05-24T18:00:00.000Z"
+  }
+]

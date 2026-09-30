@@ -1,0 +1,26 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node dev-data/data/import-dev-data.js --import",
+    "seed:delete": "node dev-data/data/import-dev-data.js --delete"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "morgan": "^1.12.1",
+    "nodemon": "^3.1.14"
+  }
+}
